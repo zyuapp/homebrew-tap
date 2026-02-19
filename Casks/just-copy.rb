@@ -1,6 +1,6 @@
 cask "just-copy" do
-  version "1.0.0"
-  sha256 "4d6227b3df0ed35f301c9e9019c8720f69b1b637aa8c8eb9591a0b50f8bb37f3"
+  version "1.0.1"
+  sha256 "6cddbc5d4052904370afe6a824216ace04257dc99587e0b915dfc900ef1a8195"
 
   url "https://github.com/zyuapp/just-copy/releases/download/v#{version}/JustCopy-v#{version}-macos-arm64.zip"
   name "JustCopy"
