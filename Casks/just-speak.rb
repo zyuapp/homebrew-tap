@@ -1,15 +1,15 @@
 cask "just-speak" do
-  version "1.1.0"
-  sha256 "e07c27af9a0a043386d1f353b3ad9cf2588b9f2195f78b61f4a1fcb4e1bb5d5d"
+  version "1.2.0"
+  sha256 "b3800cdab83426b784aae16c76e872fd66ff50da12935e0f3c2e3402f28bca2d"
 
   url "https://github.com/zyuapp/just-speak/releases/download/v#{version}/JustSpeak-v#{version}-macos-arm64.zip",
       verified: "github.com/zyuapp/just-speak/"
   name "JustSpeak"
-  desc "System-wide offline voice dictation for macOS"
+  desc "System-wide offline voice dictation"
   homepage "https://github.com/zyuapp/just-speak"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "JustSpeak.app"
 
