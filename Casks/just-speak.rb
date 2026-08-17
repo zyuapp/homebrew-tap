@@ -1,8 +1,8 @@
 cask "just-speak" do
-  version "1.2.0"
-  sha256 "b3800cdab83426b784aae16c76e872fd66ff50da12935e0f3c2e3402f28bca2d"
+  version "1.3.0"
+  sha256 "1571204c70d4d6389e98c81f366401783d0e5f5954001a66399505fa3ff320e7"
 
-  url "https://github.com/zyuapp/just-speak/releases/download/v#{version}/JustSpeak-v#{version}-macos-arm64.zip",
+  url "https://github.com/zyuapp/just-speak/releases/download/v#{version}/JustSpeak-v#{version}-macos-arm64.dmg",
       verified: "github.com/zyuapp/just-speak/"
   name "JustSpeak"
   desc "System-wide offline voice dictation"
@@ -11,7 +11,7 @@ cask "just-speak" do
   depends_on arch: :arm64
   depends_on macos: :sonoma
 
-  app "JustSpeak.app"
+  app "Just Speak.app"
 
   zap trash: [
     "~/Library/Application Support/just-speak",
@@ -19,8 +19,4 @@ cask "just-speak" do
     "~/Library/Preferences/com.zyu.just-speak.plist",
     "~/Library/Preferences/com.zyu.VoiceToText.plist",
   ]
-
-  caveats <<~EOS
-    This app is unsigned and not notarized, so macOS may show a security warning on first launch.
-  EOS
 end
